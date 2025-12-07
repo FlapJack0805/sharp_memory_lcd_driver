@@ -90,3 +90,17 @@ static void write_lines(uint8_t *lines, uint16_t num_lines, uint8_t *data)
 
 
 
+/*
+ * I imagine the screen looking something like what I displayed below
+┌────────────────────────────────────────────────┐
+│  SPEED:  72 mph | MENU TITLE | SOC  50%        │
+│                                                │
+├────────────────────────────────────────────────┤
+│                    MENU DATA                   │
+│                                                │
+│                                                │
+│                                                │
+│                                                │
+│                                                │
+└────────────────────────────────────────────────┘
+*/
