@@ -405,6 +405,27 @@ static int print_string(uint16_t start_x, uint16_t start_y, uint8_t char_size, c
 }
 
 
+int display_menu_name(const char *menu_name)
+{
+    const uint8_t char_size = 5;
+
+    uint16_t char_width = char_size << 3;   // 8 * size
+    uint16_t str_len = strlen(menu_name);
+    uint16_t text_width = str_len * char_width;
+
+    uint16_t middle = (TOP_LEFT_DIVIDER_COLUMN + TOP_RIGHT_DIVIDER_COLUMN) / 2;
+
+    int start_x = middle - (text_width / 2);
+    if (start_x < TOP_LEFT_DIVIDER_COLUMN + 1)
+        start_x = TOP_LEFT_DIVIDER_COLUMN + 1;
+
+    uint16_t start_y = 0;
+
+    clear_area(TOP_LEFT_DIVIDER_COLUMN + 1, 0, TOP_RIGHT_DIVIDER_COLUMN - TOP_LEFT_DIVIDER_COLUMN - 1, TOP_DIVIDER_ROW - 1);
+
+    return print_string(start_x, start_y, char_size, menu_name);
+}
+
 /*
 static void print_display(void)
 {
@@ -572,6 +593,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   init_display();
   display_speed(100);
+  display_menu_name("DRIVE");
   while (1)
   {
     /* USER CODE END WHILE */
