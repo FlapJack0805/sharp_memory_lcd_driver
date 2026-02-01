@@ -1,0 +1,9 @@
+../Core/Src/main.c:267:13:clear_area	3
+../Core/Src/main.c:349:12:print_string.constprop	22
+../Core/Src/main.c:452:5:display_speed	1
+../Core/Src/main.c:462:5:display_soc	1
+../Core/Src/main.c:472:5:display_text	1
+../Core/Src/main.c:478:5:display_menu_num	2
+../Core/Src/main.c:593:6:SystemClock_Config	3
+../Core/Src/main.c:538:5:main	15
+../Core/Src/main.c:864:6:Error_Handler	1

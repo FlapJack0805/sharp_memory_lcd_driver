@@ -1,0 +1,9 @@
+../Core/Src/main.c:267:13:clear_area	32	static
+../Core/Src/main.c:349:12:print_string.constprop	448	dynamic,bounded
+../Core/Src/main.c:452:5:display_speed	16	static
+../Core/Src/main.c:462:5:display_soc	16	static
+../Core/Src/main.c:472:5:display_text	8	static
+../Core/Src/main.c:478:5:display_menu_num	16	static
+../Core/Src/main.c:593:6:SystemClock_Config	88	static,ignoring_inline_asm
+../Core/Src/main.c:538:5:main	296	dynamic,ignoring_inline_asm
+../Core/Src/main.c:864:6:Error_Handler	0	static,ignoring_inline_asm
